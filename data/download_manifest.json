@@ -1,0 +1,19 @@
+{
+  "files": [
+    {
+      "name": "test.zip",
+      "size_bytes": 19639153,
+      "sha256": "31e66c695f3e5a32891a18a60231dfcbf80087af9c7671ac68a260360584b0ab"
+    },
+    {
+      "name": "train.zip",
+      "size_bytes": 137708705,
+      "sha256": "9b69a508febe33f1b317bb288c768e87ec129598112451c2e8ee40ba3797d17e"
+    },
+    {
+      "name": "valid.zip",
+      "size_bytes": 38312703,
+      "sha256": "1d9dbe38f5d291ccd33ee6981c12fe003aea37c0b2a43382ad2a7c492a09c3eb"
+    }
+  ]
+}

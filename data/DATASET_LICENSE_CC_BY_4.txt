@@ -1,0 +1,8 @@
+Dataset: GARBAGE CLASSIFICATION 3
+Author: Material Identification (Roboflow)
+Mirror: keremberke/garbage-object-detection (Hugging Face)
+License stated by the original dataset card: Creative Commons Attribution 4.0 International (CC BY 4.0).
+Full authoritative terms: https://creativecommons.org/licenses/by/4.0/legalcode
+Original source: https://universe.roboflow.com/material-identification/garbage-classification-3/dataset/2
+Retain attribution and indicate changes when sharing an adaptation.
+This file is a license pointer and attribution notice, not the full legal text.

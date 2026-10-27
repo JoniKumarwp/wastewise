@@ -1,0 +1,88 @@
+{
+  "splits": [
+    {
+      "split": "train",
+      "images": 7326,
+      "boxes": 52701,
+      "classes": {
+        "biodegradable": 32934,
+        "paper": 3074,
+        "metal": 4003,
+        "cardboard": 3323,
+        "glass": 5324,
+        "plastic": 4043
+      }
+    },
+    {
+      "split": "valid",
+      "images": 1569,
+      "boxes": 10833,
+      "classes": {
+        "biodegradable": 6488,
+        "glass": 1131,
+        "plastic": 821,
+        "cardboard": 703,
+        "metal": 1024,
+        "paper": 666
+      }
+    },
+    {
+      "split": "test",
+      "images": 1569,
+      "boxes": 10539,
+      "classes": {
+        "cardboard": 670,
+        "paper": 647,
+        "plastic": 1081,
+        "biodegradable": 5973,
+        "metal": 814,
+        "glass": 1354
+      }
+    }
+  ],
+  "upstream_splits": [
+    {
+      "split": "train",
+      "images": 7324,
+      "boxes": 51601,
+      "skipped_boxes": 10,
+      "classes": {
+        "glass": 5429,
+        "biodegradable": 31714,
+        "cardboard": 3385,
+        "paper": 2979,
+        "plastic": 4146,
+        "metal": 3948
+      }
+    },
+    {
+      "split": "valid",
+      "images": 2098,
+      "boxes": 18910,
+      "skipped_boxes": 6,
+      "classes": {
+        "biodegradable": 13632,
+        "metal": 1360,
+        "cardboard": 1291,
+        "glass": 2380,
+        "plastic": 214,
+        "paper": 33
+      }
+    },
+    {
+      "split": "test",
+      "images": 1042,
+      "boxes": 3562,
+      "skipped_boxes": 1,
+      "classes": {
+        "paper": 1375,
+        "plastic": 1585,
+        "metal": 533,
+        "cardboard": 20,
+        "biodegradable": 49
+      }
+    }
+  ],
+  "seed": 234,
+  "note": "Split by filename source groups, stratified by dominant class (approximately 70/15/15). Original split provenance is in split_manifest.json. Review near-duplicates and capture sessions before research use."
+}

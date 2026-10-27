@@ -1,0 +1,37 @@
+{
+  "images": {
+    "train": 7326,
+    "valid": 1569,
+    "test": 1569
+  },
+  "boxes_by_class": {
+    "train": {
+      "0": 32934,
+      "4": 3074,
+      "3": 4003,
+      "5": 4043,
+      "2": 5324,
+      "1": 3323
+    },
+    "valid": {
+      "0": 6488,
+      "2": 1131,
+      "3": 1024,
+      "1": 703,
+      "5": 821,
+      "4": 666
+    },
+    "test": {
+      "0": 5973,
+      "2": 1354,
+      "1": 670,
+      "4": 647,
+      "3": 814,
+      "5": 1081
+    }
+  },
+  "invalid_files_or_labels": [],
+  "cross_split_exact_duplicate_groups": 0,
+  "cross_split_source_name_groups": 0,
+  "source_group_check": "Uses the filename before .rf.; this heuristic cannot establish capture-session independence or rule out other near-duplicates."
+}

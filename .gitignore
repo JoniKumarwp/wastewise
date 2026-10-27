@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+.pytest_cache/
+runtime/scans/
+runtime/*.sqlite3
+data/garbage/yolo/
+data/garbage/*.zip
+models/owlv2/*.safetensors*
+assets/examples/
+runs/
+reports/
+*.part
