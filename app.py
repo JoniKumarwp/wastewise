@@ -13,6 +13,30 @@ from wastewise.database import (init_db, get_recommendations, save_scan, list_sc
 from wastewise.imaging import load_image, annotate, png_bytes
 
 st.set_page_config(page_title="ReUseWaste · See waste differently", page_icon="♻️", layout="wide")
+import subprocess
+import sys
+from pathlib import Path
+
+if st.sidebar.button("Download / prepare model"):
+    app_folder = Path(__file__).resolve().parent
+
+    with st.spinner("Downloading model weights. Please wait…"):
+        result = subprocess.run(
+            [
+                sys.executable,
+                str(app_folder / "scripts" / "download_model.py"),
+            ],
+            cwd=str(app_folder),
+            capture_output=True,
+            text=True,
+        )
+
+    if result.returncode == 0:
+        st.success("Model setup completed.")
+        st.rerun()
+    else:
+        st.error("Model download failed.")
+        st.code(result.stdout + "\n" + result.stderr)
 st.markdown("""<style>
 .stApp {background:#f6f8f5;color:#173b2b}
 .block-container {padding-top:2rem;max-width:1450px}
