@@ -12,7 +12,7 @@ from wastewise.database import (init_db, get_recommendations, save_scan, list_sc
     scan_rows, add_feedback, csv_bytes, database_bytes, export_feedback)
 from wastewise.imaging import load_image, annotate, png_bytes
 
-st.set_page_config(page_title="WasteWise · See waste differently", page_icon="♻️", layout="wide")
+st.set_page_config(page_title="ReUseWaste · See waste differently", page_icon="♻️", layout="wide")
 st.markdown("""<style>
 .stApp {background:#f6f8f5;color:#173b2b}
 .block-container {padding-top:2rem;max-width:1450px}
@@ -42,7 +42,7 @@ def get_detector(engine, device, weights=""):
 initialize()
 ready = (MODEL_PATH/"model.safetensors").is_file()
 with st.sidebar:
-    st.markdown("## ♻ WasteWise")
+    st.markdown("## ♻ ReUseWaste")
     st.caption("See it. Sort it. Give it another life.")
     page = st.radio("Workspace", ["Detect waste","Scan history","Recovery guide","Dataset & training","About the model"], label_visibility="collapsed")
     st.divider()
